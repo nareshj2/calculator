@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <button onclick="left()"><i class="fa-solid fa-align-left"></i></button>
+    <button onclick="center()"><i class="fa-solid fa-align-center"></i></button>
+    <button onclick="right()"><i class="fa-solid fa-align-right"></i></button>
+    <button onclick="justi()"><i class="fa-light fa-align-justify"></i></button>
+    <p id="a">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolore velit nihil fuga blanditiis ipsum ea reiciendis, ratione quaerat, nostrum optio laboriosam ipsam animi non iusto asperiores quas et tempore. Possimus velit itaque, suscipit delectus debitis pariatur non amet sapiente asperiores cum animi dolore totam recusandae? Distinctio eaque quisquam recusandae veritatis amet impedit ipsum, numquam nisi inventore vero provident incidunt vitae. Expedita ex laboriosam praesentium repellendus excepturi maiores, tenetur autem velit quaerat, quasi aliquid, hic cupiditate quibusdam pariatur deserunt. Modi, non tempora doloremque asperiores nisi necessitatibus quis voluptatum ipsam vero atque perspiciatis consectetur officiis accusamus dolorum sunt reprehenderit. Nesciunt, qui.
+
+    </p>
+    <script>
+        function left()
+        {
+            document.getElementById("a").style.textAlign="Left"
+        }
+        function right()
+        {
+            document.getElementById("a").style.textAlign="Right"
+        }
+        function center()
+        {
+            document.getElementById("a").style.textAlign="center"
+        }
+        function justi()
+        {
+            document.getElementById("a").style.textAlign="justify"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #a{
+            width: 300px;
+            transition:rotate 10s;
+        }
+    </style>
+</head>
+<body>
+    <img id="a" src="../Assets/Images/hypnosis-gf6449001f_1280.png">
+    <input type="button" value="spin" onmousedown="rot()" onmouseup="rotback()">
+    <script>
+        function rot()
+        {
+            document.getElementById("a").style.rotate="6360deg"
+        }
+        function rotback()
+        {
+            document.getElementById("a").style.rotate="0deg"
+        }
+    </script>
+</body>
+</html>

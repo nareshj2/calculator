@@ -1,0 +1,99 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+    
+#header{
+    color: transparent;
+    box-shadow: 0px 5px 10px black;
+    font-size: 0px;
+    width: 100%;
+    height: 600px;
+    background-color: aqua;
+}
+#headervid{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+}
+
+#navbar{
+    width: 100%;
+    height: 60px;
+    background-color: gray;
+    box-shadow: 0px 5px 10px black;
+    list-style-type: none;
+    text-decoration-line: none;
+    color: white;
+}
+#mainlist{
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+.li{
+    background-color: rgb(77,0,77);
+    padding: 20px;
+    border: 2px solid white;
+    height: 16px;
+    list-style-type: none;
+}
+.li:hover{
+    background-color: pink;
+}
+.li:hover a{
+    color:black;
+}
+#social{
+    float: left;
+    width: 50%;
+    height: 600px;
+    position: absolute;
+    padding-top: 5px;
+}
+#img{
+    width: 100%;
+    height: 600px;
+}
+#login{
+    float: right;
+    width: 50%;
+    height: 600px;
+    position: relative;
+    align-content: center;
+    background-color:rgba(0, 128, 0, 0.622);
+}
+#table{
+    width: 300px;
+    height: 200px;
+    font-size: 30px;
+    position: relative;
+    left: 40%;
+    top: 20px;
+    border: 5px solid yellow;
+    box-shadow: 0px 5px black;
+}
+#input{
+    font-size: 30px;
+    padding: 10px;
+    padding-left: 30px;
+    margin:6px;
+    align-content: center;
+    justify-content: center;
+    position:relative;
+}
+#button{
+    width: 300px;
+    font-size: 30px;
+    align-content: center;
+    color: blue;
+    background-color: green;
+    border-radius: 25px;
+    margin-left: 70px;
+}
+#h1{
+    align-items: center;
+    padding-left: 150px;
+}

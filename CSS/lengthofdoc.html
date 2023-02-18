@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <h1></h1>
+    <script>
+        var lenofele=document.getElementsByTagName("h1").length
+        var cont=document.getElementsByTagName("h1")
+        for(i=0;i<=lenofele;i++)
+        {
+            cont[i].innerHTML="this is my "+(i+1)+"hi"
+            if(i%2==0)
+            {
+            cont[i].style.color="black"
+            cont[i].style.backgroundColor="red"
+            }
+            else{
+                cont[i].style.color="red"
+            cont[i].style.backgroundColor="black"
+            }
+        }
+    </script>
+</body>
+</html>

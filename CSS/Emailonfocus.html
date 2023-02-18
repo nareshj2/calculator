@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #fs{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            width: 300px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+        #in{
+            width: 100%;
+            height: 30px;
+            font-size: 20px;
+            padding-left: 10px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+        #l{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset id="fs">
+        <legend id="l" style="display:none">Email or Phone
+
+        </legend>
+        <input placeholder="Email or Phone" id="in" onfocus="fun()" onblur="notfun()">
+
+    </fieldset>
+    <script>
+        function fun()
+        {
+            document.getElementById("in").removeAttribute("placeholder")
+            document.getElementById("l").removeAttribute("style")
+            document.getElementById("l").style.color="blue"
+            document.getElementById("fs").style.borderColor="blue"
+        }
+        function notfun()
+        {
+            document.getElementById("in").setAttribute("placeholder","Email or Phone")
+            document.getElementById("l").setAttribute("style","display:none")
+            document.getElementById("fs").style.borderColor="black"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        #b{
+            width:320px;
+        }
+        #a{
+            position: absolute;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body onkeydown="jump()" onkeyup="back()">
+    <marquee id="a" direction="right" scrollamount="40">
+        <img id="b" src="../Assets/Images/mario-running.gif">
+
+    </marquee>
+    <script>
+        function jump()
+        {
+            document.getElementById("a").style.bottom="120px"
+        }
+        function back()
+        {
+            document.getElementById("a").style.bottom="0px"
+        }
+    </script>
+    
+</body>
+</html>

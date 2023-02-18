@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d{
+            border: 0px;
+            outline: 0px;
+            background-color: white;
+        }
+        #i{
+            border: 0px;
+            outline: 0px;
+            background-color: white;
+        }
+        #res{
+            border: 0px;
+            outline: 0px;
+            background-color: white;
+        }
+        div{
+            border: 2px black solid;
+            width:5%;
+            font-size: 25px;
+            align-items: center;
+            font-weight: bold;
+        }
+        #t{
+            font-size: 10px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    <span id="t" onchange="text()">Text Font</span>
+    <div>
+    <input  type="button" value="-" onclick="dec()" id="d">
+    <input type="button" value="0" id="res">
+    <input type="button" value="+" onclick="inc()" id="i">
+    </div>
+    <script>
+        var a=0;
+        function inc()
+        { 
+            if(a>=0&&a<30)
+            {
+                document.getElementById("res").value=++a;
+            }
+
+        }
+        function dec()
+        { 
+            if(a>0&&a<=30)
+            {
+                document.getElementById("res").value=--a;
+            }
+
+        }
+        function text()
+        {
+            var tex=document.getElementById("a").value 
+            document.getElementById("t").style.fontSize=tex+"px"
+        }
+    </script>
+</body>
+</html>

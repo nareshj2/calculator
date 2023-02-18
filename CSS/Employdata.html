@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 30px;
+        }
+        th{
+            border: 2px solid black;
+            padding: 15px;
+        }
+        td{
+            border: 2px solid black;
+            padding: 15px;
+        }
+        .a{
+            padding: 0px;
+        }
+        #circle{
+            width: 400px;
+            height: 400px;
+            background-color: salmon;
+            box-shadow: 0px 0px 5px black;
+            border-radius: 100%;
+            transition: rotate 10s;
+        }
+        #circle:hover{
+            rotate: 360deg;
+        }
+        h1{
+            font-size: 18px;
+        }
+    #FN{
+        rotate: -90deg;
+        position: relative;
+        bottom: 50px;
+    }
+    #LN{
+        rotate: -75deg;
+        position: relative;
+        bottom: 70px;
+        left: 180px;
+    }
+    #EM{
+        rotate: -55deg;
+        position: relative;
+        bottom: 50px;
+        left: 170px;
+    }
+    #CC{
+        rotate: -25deg;
+        position: relative;
+        bottom: 80px;
+        left: 170px;
+        background-color: tomato;
+    }
+    #PN{
+        rotate: 0deg;
+        position: relative;
+        top: 80px;
+        left: 220px;
+    }
+    #GN{
+        rotate: 25deg;
+        position: relative;
+        top: 150px;
+        left: 200px;
+    }
+    
+    #DD{
+        rotate: 90deg;
+        position: relative;
+        top: 200px;
+        right: 20px;
+        background-color: blue;
+    }
+    #MM{
+        rotate: 125deg;
+        position: relative;
+        top: 150px;
+        right: 140px;
+        background-color: aqua;
+    }
+    #YY{
+        rotate:180deg;
+        position: relative;
+        bottom: 50px;
+        right: 220px;
+        background-color: brown;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th colspan="6">Emp.Table</th>
+        </tr>
+        <tr>
+            <th colspan="3">
+                <input id="fn"
+                placeholder="First Name">
+            </th>
+            <th colspan="3">
+                <input id="ln"
+                placeholder="Last Name">
+            </th>
+
+        </tr>
+        <tr>
+            <th colspan="6">
+                <input id="em"
+                placeholder="Email" type="email">
+            </th>
+        </tr>
+        <tr>
+            <th colspan="3">
+               <select id="cc">
+                <option>+91</option>
+                <option>+1</option>
+                <option>+545</option>
+
+               </select>
+            </th>
+            <th colspan="3">
+                <input id="pn" placeholder="Phone Number" maxlength="10" minlength="10">
+            </th>
+        </tr>
+        <tr>
+            <td colspan="6">Gender</td>
+        </tr>
+        <tr>
+            <th colspan="2" class="a">
+                <input id="gn" value="Male" type="radio" name="a">
+                <label>Male</label>
+            </th>
+            <th colspan="2" class="a">
+                <input id="gn" value="Female" type="radio" name="a">
+                <label>Female</label>
+            </th>
+            <th colspan="2" class="a">
+                <input id="gn" value="Others" type="radio" name="a">
+                <label>Others</label>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2" class="a">
+                <select id="dd">
+                <option>Day</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+                </select>
+
+            </th>
+            <th colspan="2">
+            <select id="mm">
+                <option>Month</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+
+                </select>
+
+            </th>
+            <th colspan="2">
+                <select id="yy">
+                    <option>Year</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+
+                </select>
+
+            </th>
+        </tr>
+        <tr>
+            <th colspan="6">
+                <input type="button" value="update"  onclick="detailsofemp()">
+            </th>
+        </tr>
+    </table>
+    <div id="circle">
+        <h1 id="FN">Lorem ipsum dolor sit amet.</h1>
+        <h1 id="LN">Lorem ipsum dolor sit amet.</h1>
+        <h1 id="EM">Lorem ipsum dolor sit amet.</h1>
+        <h1 id="CC">Lorem ipsum dolor sit amet.</h1>
+        <h1 id="PN">Lorem ipsum dolor sit amet.</h1>
+        <h1 id="GN">Lorem ipsum dolor sit amet.</h1>
+        <h1 id="DD">Lorem ipsum dolor sit amet.</h1>
+        <h1 id="MM">Lorem ipsum dolor sit amet.</h1>
+        <h1 id="YY">Lorem ipsum dolor sit amet.</h1>
+    </div>
+    <script>
+        function detailsofemp()
+        {
+            var
+            firstname=document.getElementById("fn").value 
+            document.getElementById("FN").innerHTML=firstname;
+            var
+            firstname=document.getElementById("ln").value 
+            document.getElementById("LN").innerHTML=firstname;
+            var
+            firstname=document.getElementById("em").value 
+            document.getElementById("EM").innerHTML=firstname;
+            var
+            firstname=document.getElementById("cc").value 
+            document.getElementById("CC").innerHTML=firstname;
+            var
+            firstname=document.getElementById("pn").value 
+            document.getElementById("PN").innerHTML=firstname;
+            var
+            firstname=document.getElementById("dd").value 
+            document.getElementById("DD").innerHTML=firstname;
+            var
+            firstname=document.getElementById("mm").value 
+            document.getElementById("MM").innerHTML=firstname;
+            var
+            firstname=document.getElementById("yy").value 
+            document.getElementById("YY").innerHTML=firstname;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #a{
+        width: 120px;
+        position: relative;
+        transition: 5s;
+    }
+    #left{
+        position: absolute;
+        width: 60px;
+        rotate: -90deg;
+        left: 0px;
+        bottom: 20px;
+    }
+    #up{
+        position: absolute;
+        width: 60px;
+        right: 35%;
+        top: 20px;
+    }
+    #right{
+        position: absolute;
+        width:60px;
+        rotate: 90deg;
+        right: 0px;
+        bottom: 20px;
+    }
+    #down{
+        position: absolute;
+        width: 60px;
+        rotate: 180deg;
+        bottom: 20px;
+        right: 35%;
+    }
+    #keyboard{
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 250px;
+        left: 400px;
+    }
+    
+    </style>
+</head>
+<body>
+    <img src="../Assets/Images/giphy.gif" id="a">
+    <div id="keyboard">
+        <img src="../Assets/Images/kindpng_3429827.png" id="left" onclick="leftb()">
+        <img src="../Assets/Images/kindpng_3429827.png" id="up" onclick="upb()">
+        <img src="../Assets/Images/kindpng_3429827.png" id="right" onclick="rightb()">
+        <img src="../Assets/Images/kindpng_3429827.png" id="down" onclick="downb()">
+
+    </div>
+    <script>
+        var hor=0;
+        var vir=0;
+        function rightb()
+        {
+            hor++;
+            document.getElementById("a").style.left=hor+"%"
+            document.getElementById("a").style.rotate="0deg"
+        }
+        function leftb()
+        {
+            hor--;
+            document.getElementById("a").style.left=hor+"%"
+            document.getElementById("a").style.rotate="180deg"
+        }
+        function upb()
+        {
+            vir++;
+            document.getElementById("a").style.bottom=(hor*10)+"px"
+            document.getElementById("a").style.rotate="-90deg"
+        }
+        function downb()
+        {
+            vir--;
+            document.getElementById("a").style.bottom=(vir*10)+"px"
+            document.getElementById("a").style.rotate="90deg"
+        }
+
+    </script>
+</body>
+</html>
